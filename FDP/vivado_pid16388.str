@@ -1,0 +1,1252 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 16388
+License: Customer
+
+Current time: 	Thu Mar 19 13:51:58 SGT 2026
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Aadith Yadav
+User home directory: C:/Users/User
+User working directory: D:/NUS/EE2026/Complex Calculator/FDP
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/User/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/User/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/User/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/NUS/EE2026/Complex Calculator/FDP/vivado.log
+Vivado journal file location: 	D:/NUS/EE2026/Complex Calculator/FDP/vivado.jou
+Engine tmp dir: 	D:/NUS/EE2026/Complex Calculator/FDP/.Xil/Vivado-16388-DesktopAa
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	204 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 521 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 61 MB (+61721kb) [00:00:08]
+// [Engine Memory]: 483 MB (+355502kb) [00:00:08]
+// Opening Vivado Project: D:\NUS\EE2026\Complex Calculator\FDP\FDP.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project {D:/NUS/EE2026/Complex Calculator/FDP/FDP.xpr} 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+3538kb) [00:00:13]
+// [Engine Memory]: 569 MB (+63823kb) [00:00:13]
+// [GUI Memory]: 76 MB (+4831kb) [00:00:15]
+// Tcl Message: open_project {D:/NUS/EE2026/Complex Calculator/FDP/FDP.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Christopher/Desktop/MODS/.Xil/Vivado-3416-CMS-SG-D1-13900K/PrjAr/_X_' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 585 MB. GUI used memory: 41 MB. Current time: 3/19/26 1:52:03 PM SGT
+// [Engine Memory]: 601 MB (+3838kb) [00:00:16]
+// Project name: FDP; location: D:/NUS/EE2026/Complex Calculator/FDP; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 801.402 ; gain = 69.742 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Top_Student.v", 463, 312); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 349, 267); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 139, 231); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 234, 252); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "argand_plane"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 122, 161); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 131, 268); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, argand_plane (argand_plane.v)]", 5, false); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "clock"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/clock.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/clock.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, argand_plane (argand_plane.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, argand_plane (argand_plane.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 88 MB (+8584kb) [00:01:26]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock (clock.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clock (clock.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("clock.v", 309, 122); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("clock.v", 299, 299); // ce (w, ck)
+selectCodeEditor("clock.v", 229, 384); // ce (w, ck)
+selectCodeEditor("clock.v", 193, 427); // ce (w, ck)
+selectCodeEditor("clock.v", 184, 424); // ce (w, ck)
+selectCodeEditor("clock.v", 177, 440); // ce (w, ck)
+selectCodeEditor("clock.v", 175, 451); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("clock.v", 281, 213); // ce (w, ck)
+typeControlKey((HResource) null, "clock.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 628 MB. GUI used memory: 44 MB. Current time: 3/19/26 1:53:50 PM SGT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 113, 277); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 105, 292); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 100, 298); // ce (w, ck)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Student.v", 111, 249); // ce (w, ck)
+// [Engine Memory]: 635 MB (+4022kb) [00:02:42]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// D (ck): Invalid Top Module: addNotify
+// Elapsed time: 31 seconds
+dismissDialog("Invalid Top Module"); // D (ck)
+selectCodeEditor("Top_Student.v", 425, 385); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 171, 167); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 149, 150); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 95 MB (+3220kb) [00:03:27]
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 241, 351); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 133, 392); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 108, 178); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 105, 287); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 156, 379); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 275, 425); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+selectCodeEditor("argand_plane.v", 85, 412); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 274, 435); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 58, 266); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 123, 218); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 131, 375); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 131, 375, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("argand_plane.v", 166, 389); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 157, 201); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 154, 209); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 77, 456); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+selectCodeEditor("argand_plane.v", 124, 242); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+selectCodeEditor("argand_plane.v", 196, 314); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 143, 217); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 121, 279); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 121, 279, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 121, 279); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 120, 279); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 148, 319); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 116, 278); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 114, 278, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+selectCodeEditor("argand_plane.v", 92, 212); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 105, 382); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 105, 382, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 67, 408); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 80, 464); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 84, 434); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 93, 417); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("Top_Student.v", 95, 218); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 95, 218, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 77, 430); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 77, 430, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 85, 318); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 85, 318, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 146, 447); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 59, 381); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("argand_plane.v", 290, 434); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+selectCodeEditor("argand_plane.v", 201, 134); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 194, 147); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 202 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 183, 429); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Student.v", 143, 439); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock.v", 3); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+selectCodeEditor("argand_plane.v", 286, 434); // ce (w, ck)
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 101 MB (+1101kb) [00:11:26]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1'
+// B (ck): Create Constraints File: addNotify
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1 
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "constraints", true); // X (C, B)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (B)
+dismissDialog("Create Constraints File"); // B (ck)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1'
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1 
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new'
+// bx (ck):  Add Constraint  : addNotify
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new 
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new'
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new 
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new'
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new 
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new'
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new 
+// Tcl Command: 'file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1'
+// Tcl Message: file mkdir D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1 
+// Tcl Message: file mkdir {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new} 
+// Tcl Message: close [ open {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new/constraints.xdc} w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new/constraints.xdc}} 
+dismissDialog("Add Constraint"); // bx (ck)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 8, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("constraints.xdc", 314, 133); // ce (w, ck)
+typeControlKey((HResource) null, "constraints.xdc", 'v'); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 2); // k (j, ck)
+// Elapsed time: 143 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// Elapsed time: 42 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 19 14:07:18 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 14:07:18 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 619ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Bitstream Generation Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 54 MB. Current time: 3/19/26 2:10:06 PM SGT
+// Elapsed time: 466 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ah (ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC NSTD-1] Unspecified I/O Standard: 9 out of 9 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: JC[7:0], and clk.. ]", 4, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, DRC, Pin Planning, [DRC NSTD-1] Unspecified I/O Standard: 9 out of 9 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: JC[7:0], and clk.. ]", 4, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 3); // k (j, ck)
+selectCodeEditor("constraints.xdc", 589, 92); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 3); // k (j, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 14:16:04 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 14:16:04 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 256 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 1028 seconds
+selectCodeEditor("constraints.xdc", 919, 132); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B9A9BDA 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 58 MB. Current time: 3/19/26 2:37:40 PM SGT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,187 MB (+545743kb) [00:45:54]
+dismissDialog("Auto Connect"); // bx (ck)
+// [GUI Memory]: 106 MB (+37kb) [00:47:12]
+// Elapsed time: 277 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 1); // k (j, ck)
+selectCodeEditor("argand_plane.v", 124, 352); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 14:42:48 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 14:42:48 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+selectCodeEditor("argand_plane.v", 727, 227); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("argand_plane.v", 425, 371); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 363 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 52 MB. Current time: 3/19/26 3:07:41 PM SGT
+// Elapsed time: 1952 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+selectCodeEditor("argand_plane.v", 132, 308); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 210, 319); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 248, 302); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 209, 378); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 15:22:20 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 15:22:20 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 179 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+selectCodeEditor("argand_plane.v", 158, 448); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 112, 455); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 118, 448); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 205 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 15:29:25 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 15:29:25 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 52 MB. Current time: 3/19/26 3:37:43 PM SGT
+// Elapsed time: 613 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("argand_plane.v", 139, 434); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 144, 429); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("argand_plane.v", 204, 416); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 280, 122); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("argand_plane.v", 128, 446); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("argand_plane.v", 319, 374); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 300, 432); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 295, 419); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 248, 418); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 241, 418); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 814ms to process. Increasing delay to 2000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 145 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("argand_plane.v", 141, 96); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 284, 467); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 284, 454); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 64, 77); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 41 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("argand_plane.v", 257, 218); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 157, 211); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 80, 214); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 80, 215, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 48 seconds
+selectCodeEditor("argand_plane.v", 196, 348); // ce (w, ck)
+// Elapsed time: 25 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("argand_plane.v", 155, 58); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 93, 55); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 266, 408); // ce (w, ck)
+// Elapsed time: 35 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 84, 33); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 11 seconds
+selectCodeEditor("argand_plane.v", 319, 107); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("argand_plane.v", 281, 145); // ce (w, ck)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 15:49:56 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 15:49:56 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 60 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. ]", 2, true, false, false, false, false, true); // ah (O, ck) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. , [Synth 8-6156] failed synthesizing module 'Top_Student' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]. ]", 3, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. , [Synth 8-6156] failed synthesizing module 'Top_Student' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]. ]", 3, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. , [Synth 8-6156] failed synthesizing module 'Top_Student' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]. ]", 3, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectCodeEditor("argand_plane.v", 292, 343); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;69;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 233 seconds
+selectCodeEditor("argand_plane.v", 455, 390); // ce (w, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;69;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;69;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 24 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;69;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("argand_plane.v", 300, 352); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 219, 347); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 167, 349); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 194, 342); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("argand_plane.v", 63, 359); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 63, 359, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "argand_plane.v", 1); // k (j, ck)
+selectCodeEditor("argand_plane.v", 215, 353); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 270, 344); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 220, 356); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 103, 411); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 182, 350); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 15:57:14 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 15:57:14 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 444 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3380] loop condition does not converge after 2000 iterations [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;69;-;;-;16;-;"); // ah (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 52 MB. Current time: 3/19/26 4:07:45 PM SGT
+// Elapsed time: 699 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3380] loop condition does not converge after 2000 iterations [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;69;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("argand_plane.v", 214, 355); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 313, 356); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 229, 348); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 220, 354); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 26 seconds
+selectCodeEditor("argand_plane.v", 129, 421); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("argand_plane.v", 131, 465); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 258, 406); // ce (w, ck)
+// Elapsed time: 168 seconds
+selectCodeEditor("argand_plane.v", 55, 346); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 194, 426); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 84, 351); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 146, 351); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 155, 349); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 285, 352); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 116, 232); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 116, 232, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("argand_plane.v", 100, 114); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 140, 113); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 208, 343); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 208, 343, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3380] loop condition does not converge after 2000 iterations [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:69]. ]", 1, false); // ah (O, ck)
+selectCodeEditor("argand_plane.v", 199, 328); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 205, 390); // ce (w, ck)
+// Elapsed time: 169 seconds
+selectCodeEditor("argand_plane.v", 104, 420); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 416, 347); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 156, 422); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 516, 474); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 366, 313); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 379, 288); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("argand_plane.v", 639, 249); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("argand_plane.v", 117, 285); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 117, 285, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 96, 316); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 16:25:20 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 16:25:20 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 40 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectCodeEditor("argand_plane.v", 189, 317); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 237, 311); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 320, 320); // ce (w, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-403] loop limit (65536) exceeded [D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v:72]. ]", 1, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\NUS\EE2026\Complex Calculator\FDP\FDP.srcs\sources_1\new\argand_plane.v;-;;-;16;-;line;-;72;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("argand_plane.v", 165, 317); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 104, 207); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 138, 203); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 81, 174); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 85, 175, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "argand_plane.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "argand_plane.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 16:26:40 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 16:26:40 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 75 seconds
+selectCodeEditor("argand_plane.v", 142, 112); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 140 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 66 seconds
+selectCodeEditor("argand_plane.v", 445, 332); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 432, 356); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 146, 102); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 220, 107); // ce (w, ck)
+// Elapsed time: 76 seconds
+selectCodeEditor("argand_plane.v", 425, 334); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 425, 334, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("argand_plane.v", 425, 352); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 425, 352, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Thu Mar 19 16:33:19 2026] Launched synth_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/synth_1/runme.log [Thu Mar 19 16:33:19 2026] Launched impl_1... Run output will be captured here: D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 53 MB. Current time: 3/19/26 4:37:46 PM SGT
+// Elapsed time: 871 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/NUS/EE2026/Complex Calculator/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+selectCodeEditor("argand_plane.v", 344, 347); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 433, 339); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 151, 334); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 222, 337); // ce (w, ck)
+selectCodeEditor("argand_plane.v", 230, 340); // ce (w, ck)
