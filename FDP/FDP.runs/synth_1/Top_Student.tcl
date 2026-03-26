@@ -18,24 +18,26 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {D:/NUS/EE2026/Complex Calculator/FDP/FDP.cache/wt} [current_project]
-set_property parent.project_path {D:/NUS/EE2026/Complex Calculator/FDP/FDP.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.cache/wt [current_project]
+set_property parent.project_path C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {d:/NUS/EE2026/Complex Calculator/FDP/FDP.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/imports/res/weights.coe}}
-add_files {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/imports/res/00.coe}}
+add_files C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/imports/res/weights.coe
+add_files C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/imports/res/00.coe
 read_verilog -library xil_defaultlib {
-  {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v}
-  {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/argand_plane.v}
-  {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/clock.v}
-  {D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/sources_1/new/Top_Student.v}
+  C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v
+  C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/new/argand_plane.v
+  C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/new/clock.v
+  C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/new/input_display.v
+  C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +47,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new/constraints.xdc}}
-set_property used_in_implementation false [get_files {{D:/NUS/EE2026/Complex Calculator/FDP/FDP.srcs/constrs_1/new/constraints.xdc}}]
+read_xdc C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/constrs_1/new/constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.srcs/constrs_1/new/constraints.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

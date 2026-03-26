@@ -1,0 +1,99 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 5020
+License: Customer
+
+Current time: 	Thu Mar 26 23:33:04 SGT 2026
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 22
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 252 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Tarun
+User home directory: C:/Users/Tarun
+User working directory: C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Tarun/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Tarun/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Tarun/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/vivado.log
+Vivado journal file location: 	C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/vivado.jou
+Engine tmp dir: 	C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/.Xil/Vivado-5020-Tarun
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	234 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 673 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Tarun\Desktop\Complex-Calculator-master\Complex-Calculator-master\FDP\FDP.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 77 MB (+78475kb) [00:00:04]
+// [Engine Memory]: 534 MB (+408852kb) [00:00:04]
+// Tcl Message: open_project C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 115 MB (+35047kb) [00:00:06]
+// [Engine Memory]: 606 MB (+46938kb) [00:00:06]
+// [Engine Memory]: 645 MB (+9680kb) [00:00:07]
+// Tcl Message: open_project C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP/FDP.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: FDP; location: C:/Users/Tarun/Desktop/Complex-Calculator-master/Complex-Calculator-master/FDP; part: xc7a35tcpg236-1
+// [Engine Memory]: 683 MB (+5632kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 683 MB. GUI used memory: 42 MB. Current time: 3/26/26 11:33:05 PM SGT
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)

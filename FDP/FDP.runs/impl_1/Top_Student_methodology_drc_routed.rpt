@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Mar 19 16:36:15 2026
-| Host         : DesktopAa running 64-bit major release  (build 9200)
+| Date         : Thu Mar 26 23:18:25 2026
+| Host         : Tarun running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
 | Device       : xc7a35tcpg236-1
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 126
+             Violations found: 206
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 118        |
-| TIMING-18 | Warning  | Missing input or output delay | 8          |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 196        |
+| TIMING-18 | Warning  | Missing input or output delay | 10         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -623,42 +623,442 @@ Non-clocked sequential cell
 The clock pin m_argand_plane/oled_colour_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
+TIMING-17#119 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/an_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/an_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/an_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/an_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/anode_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/anode_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/btnC_delay_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/btnD_delay_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/btnL_delay_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/btnR_delay_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/btnU_delay_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/display_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/display_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/img_1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n1_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n1_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n1_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n1_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n2_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n2_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n2_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n2_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n3_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n3_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n3_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n3_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n4_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n4_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n4_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n4_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n5_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n5_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n5_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n5_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n6_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n6_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n6_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n6_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n7_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n7_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n7_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#166 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n7_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#167 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n8_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#168 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n8_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#169 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n8_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#170 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/n8_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[0]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#173 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[0]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#174 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[0]_rep__1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#175 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#176 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[1]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#177 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[1]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#178 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#179 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[2]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#180 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[2]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#181 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[2]_rep__1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#182 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[3]_rep/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[3]_rep__0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[3]_rep__1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/real_1_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#193 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#194 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#195 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#196 Warning
+Non-clocked sequential cell  
+The clock pin m_input_display/seg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
-An output delay is missing on JC[0] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An output delay is missing on JC[1] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on JC[2] relative to clock(s) sys_clk_pin
+An output delay is missing on JC[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on JC[3] relative to clock(s) sys_clk_pin
+An output delay is missing on JC[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on JC[4] relative to clock(s) sys_clk_pin
+An output delay is missing on JC[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on JC[5] relative to clock(s) sys_clk_pin
+An output delay is missing on JC[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on JC[6] relative to clock(s) sys_clk_pin
+An output delay is missing on JC[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on JC[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on JC[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
 Missing input or output delay  
 An output delay is missing on JC[7] relative to clock(s) sys_clk_pin
 Related violations: <none>

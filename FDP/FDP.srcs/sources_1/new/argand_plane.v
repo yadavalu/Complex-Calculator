@@ -23,8 +23,8 @@
 module argand_plane(
     input clk_25MHz,
     input clk_6p25MHz,
-    input [3:0] RE,
-    input [3:0] IM,
+    input [6:0] RE,
+    input [6:0] IM,
     output [7:0] JC
     );
     
