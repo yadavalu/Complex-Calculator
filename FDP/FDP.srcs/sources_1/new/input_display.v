@@ -75,18 +75,18 @@ module number_selector(input basys_clock, input [3:0] count, output reg [7:0]  d
 endmodule
 module input_display(
     input basys_clock,
-    input clk_2Hz,
     input clk_500Hz,
+    input clk_2Hz,
     output [1:0] led,
     input [1:0] sw,
     input btnC,btnU,btnL,btnR,btnD,
     output reg [7:0] seg,
     output reg [3:0] an,
-    output reg [6:0] real_1, img_1//, real_2, img_2
+    output reg [6:0] real_1, img_1, real_2, img_2
 
     );
-    reg [7:0]  real_2, img_2;// to be put as outputs when integrating
-//    wire clk_500Hz,clk_2Hz;
+//    reg [6:0]  real_2, img_2;// to be put as outputs when integrating
+
     reg btnU_delay, btnD_delay,btnL_delay,btnR_delay,btnC_delay;
 
     wire [7:0] d1 ,d2 ,d3 ,d4;
@@ -95,8 +95,7 @@ module input_display(
     wire [3:0] n1 ,n2 ,n3 ,n4;
     reg [3:0] n1_count = 0,n2_count = 0,n3_count = 0,n4_count = 0; // to choose number to display operand 1
     reg [3:0] n5_count = 0,n6_count = 0,n7_count = 0,n8_count = 0; // to choose number to display operand 2
-//    clock f_500Hz(basys_clock,99999,clk_500Hz);
-//    clock f_2Hz(basys_clock,24999999,clk_2Hz);
+
     number_selector digit1(basys_clock,n1,d1);
     number_selector digit2(basys_clock,n2,d2);
     number_selector digit3(basys_clock,n3,d3);

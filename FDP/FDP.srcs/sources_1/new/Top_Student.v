@@ -13,7 +13,8 @@
 
 module Top_Student (
     input clk,
-    input [1:0] sw,
+    input [1:0] sw_i,
+    input [3:0] sw,
     input btnC,btnU,btnL,btnR,btnD,
     output [7:0] JC,
     output [1:0] led,
@@ -46,22 +47,23 @@ module Top_Student (
         );
     
     wire [6:0] real_1, img_1, real_2, img_2;
+    wire [19:0] output1,output2;
     
     argand_plane m_argand_plane(
         .clk_25MHz(clk_25MHz),
         .clk_6p25MHz(clk_6p25MHz),
         .JC(JC),
-        .RE(real_1),
-        .IM(img_1)
+        .RE(output1),
+        .IM(output2)
     );
     
     
     input_display m_input_display(
         .basys_clock(clk),
-        .clk_2Hz(clk_2Hz),
         .clk_500Hz(clk_500Hz),
+        .clk_2Hz(clk_2Hz),
         .led(led),
-        .sw(sw),
+        .sw(sw_i),
         .btnC(btnC),
         .btnU(btnU),
         .btnL(btnL),
@@ -70,7 +72,20 @@ module Top_Student (
         .seg(seg),
         .an(an),
         .real_1(real_1),
-        .img_1(img_1)
+        .img_1(img_1),
+        .real_2(real_2),
+        .img_2(img_2)
+    );
+    
+    Calculate m_Calculate(
+        .clk(clk), 
+        .sw(sw),
+        .real_1(real_1),
+        .img_1(img_1),
+        .real_2(real_2),
+        .img_2(img_2),  // 7-bit unsigned inputs
+        .real_num(output1),          // Increased to 16-bit to prevent overflow
+        .img_num(output2)
     );
 
 endmodule
