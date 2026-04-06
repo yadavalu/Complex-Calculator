@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr  5 21:42:19 2026
+# Process ID: 31344
+# Current directory: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4108 C:\Users\Tarun\Desktop\FDP_123.xpr\FDP\FDP_2.xpr
+# Log file: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/vivado.log
+# Journal file: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/Calculate.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/Calculate.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/Display.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/Display.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/Desktop/Oled_Display.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/argand_plane.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/argand_plane.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/clock.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/clock.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/input_display.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/input_display.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/Top_Student.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/Top_Student.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/ip/blk_mem_gen_const/blk_mem_gen_const.xci', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/ip/blk_mem_gen_const/blk_mem_gen_const.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/ip/blk_mem_gen_img/blk_mem_gen_img.xci', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/ip/blk_mem_gen_img/blk_mem_gen_img.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/CanvasTransfer.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/CanvasTransfer.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/module_pack.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/module_pack.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/neural_net.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/neural_net.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/paint.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/paint.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/new/ss_display.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/new/ss_display.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/Desktop/Mouse_Control.vhd', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/Desktop/Mouse_Control.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/Desktop/Ps2Interface.vhd', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/Desktop/Ps2Interface.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/MouseAudioDisplay/archive_project_summary.txt', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/MouseAudioDisplay/archive_project_summary.txt'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/res/weights.coe', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/res/weights.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/res/00.coe', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/res/00.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/MODS/archive_project_summary.txt', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/MODS/archive_project_summary.txt'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sources_1/imports/Group Project Actual/archive_project_summary.txt', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sources_1/imports/Group Project Actual/archive_project_summary.txt'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/constrs_1/new/constraints.xdc', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/constrs_1/new/constraints.xdc'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.srcs/sim_1/new/test_bench.v', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.srcs/sim_1/new/test_bench.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP_2.ip_user_files', nor could it be found using path 'C:/Users/A/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-71580-LAPTOP-HU08SHG7/PrjAr/_X_/FDP.ip_user_files'.
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'blk_mem_gen_inter'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'blk_mem_gen_const'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'blk_mem_gen_img'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+ERROR: [IP_Flow 19-993] Could not find IP file for IP 'blk_mem_gen_0'.
+CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  5 21:42:59 2026...
