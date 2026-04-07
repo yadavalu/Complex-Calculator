@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 33180 
+INFO: Helper process launched with PID 24592 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.809 ; gain = 99.480
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 356.504 ; gain = 99.961
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Student' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]
-INFO: [Synth 8-6157] synthesizing module 'clock' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/clock.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clock' (1#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/clock.v:23]
-INFO: [Synth 8-6157] synthesizing module 'argand_plane' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (1#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'argand_plane' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]
 	Parameter FIXED_SCALE bound to: 32'sb00000000000000000000001001110001 
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -74,25 +74,25 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [D:/NUS/EE2026/Complex C
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
-INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
-WARNING: [Synth 8-693] zero replication count - replication ignored [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
-INFO: [Synth 8-6155] done synthesizing module 'argand_plane' (3#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]
-INFO: [Synth 8-6157] synthesizing module 'input_display' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:76]
-INFO: [Synth 8-6157] synthesizing module 'number_selector' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:34]
-INFO: [Synth 8-6155] done synthesizing module 'number_selector' (4#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:34]
-INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:127]
-INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:160]
-INFO: [Synth 8-226] default block is never used [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:216]
-INFO: [Synth 8-6155] done synthesizing module 'input_display' (5#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:76]
-INFO: [Synth 8-6157] synthesizing module 'Calculate' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:23]
-WARNING: [Synth 8-6014] Unused sequential element temp_real_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:70]
-WARNING: [Synth 8-6014] Unused sequential element temp_imag_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:71]
-WARNING: [Synth 8-6014] Unused sequential element denom_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'Calculate' (6#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:23]
-WARNING: [Synth 8-689] width (5) of port connection 'sw' does not match port width (4) of module 'Calculate' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Top_Student.v:85]
-INFO: [Synth 8-6157] synthesizing module 'Display' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (2#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'argand_plane' (3#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:23]
+INFO: [Synth 8-6157] synthesizing module 'input_display' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:76]
+INFO: [Synth 8-6157] synthesizing module 'number_selector' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'number_selector' (4#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:34]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:127]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:160]
+INFO: [Synth 8-226] default block is never used [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'input_display' (5#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:76]
+INFO: [Synth 8-6157] synthesizing module 'Calculate' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:23]
+WARNING: [Synth 8-6014] Unused sequential element temp_real_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:68]
+WARNING: [Synth 8-6014] Unused sequential element temp_imag_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:71]
+WARNING: [Synth 8-6014] Unused sequential element denom_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'Calculate' (6#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'sw' does not match port width (4) of module 'Calculate' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Top_Student.v:86]
+INFO: [Synth 8-6157] synthesizing module 'Display' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Display.v:3]
 	Parameter CHAR_H bound to: 20 - type: integer 
 	Parameter CHAR_W bound to: 9 - type: integer 
 	Parameter LINE_T bound to: 2 - type: integer 
@@ -108,12 +108,12 @@ INFO: [Synth 8-6157] synthesizing module 'Display' [D:/NUS/EE2026/Complex Calcul
 	Parameter X_I bound to: 83 - type: integer 
 	Parameter Y_REAL bound to: 3 - type: integer 
 	Parameter Y_IMAG bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'Display' (7#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Display.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (8#1) [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Display' (7#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (8#1) [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Top_Student.v:14]
 WARNING: [Synth 8-3331] design Display has unconnected port JB[2]
 WARNING: [Synth 8-3331] design argand_plane has unconnected port JA[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 415.598 ; gain = 158.270
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 416.184 ; gain = 159.641
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -126,41 +126,41 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 415.598 ; gain = 158.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.184 ; gain = 159.641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 415.598 ; gain = 158.270
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.184 ; gain = 159.641
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc]
-Finished Parsing XDC File [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Parsing XDC File [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 758.664 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 764.223 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 758.664 ; gain = 501.336
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 764.223 ; gain = 507.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 758.664 ; gain = 501.336
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 764.223 ; gain = 507.680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 758.664 ; gain = 501.336
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 764.223 ; gain = 507.680
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "my_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
@@ -168,18 +168,19 @@ INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is 
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "dynamic_scale" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:85]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:84]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:85]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:84]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+INFO: [Synth 8-5544] ROM "ld" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-DSP Debug: swapped A/B pins for adder 000001D4A04F67C0
+DSP Debug: swapped A/B pins for adder 0000027D0E293C00
 INFO: [Synth 8-5546] ROM "char_to_seg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "char_to_seg0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "char_to_seg1" won't be mapped to RAM because it is too sparse
@@ -232,7 +233,7 @@ INFO: [Synth 8-5546] ROM "char_to_seg12" won't be mapped to RAM because it is to
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 758.664 ; gain = 501.336
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 764.223 ; gain = 507.680
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -245,13 +246,14 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     48 Bit       Adders := 3     
-	   2 Input     32 Bit       Adders := 5     
-	   3 Input     32 Bit       Adders := 3     
-	   2 Input     20 Bit       Adders := 4     
+	   3 Input     48 Bit       Adders := 1     
+	   2 Input     48 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 4     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
 	   2 Input     17 Bit       Adders := 2     
-	   2 Input     13 Bit       Adders := 2     
-	   3 Input     12 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 2     
@@ -259,24 +261,24 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
 	               40 Bit    Registers := 2     
-	               20 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
 	               17 Bit    Registers := 2     
 	               16 Bit    Registers := 2     
 	                8 Bit    Registers := 5     
 	                6 Bit    Registers := 2     
-	                4 Bit    Registers := 13    
+	                4 Bit    Registers := 14    
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 10    
 +---Multipliers : 
 	                32x32  Multipliers := 1     
-	                20x32  Multipliers := 2     
+	                24x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input     48 Bit        Muxes := 3     
+	   2 Input     48 Bit        Muxes := 4     
 	   2 Input     40 Bit        Muxes := 6     
 	  32 Input     32 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 10    
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     24 Bit        Muxes := 6     
 	  32 Input     20 Bit        Muxes := 2     
-	   2 Input     20 Bit        Muxes := 6     
 	   2 Input     17 Bit        Muxes := 2     
 	   3 Input     16 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 1     
@@ -289,6 +291,7 @@ Detailed RTL Component Info :
 	   3 Input      4 Bit        Muxes := 3     
 	   6 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 16    
 	   2 Input      1 Bit        Muxes := 19    
 	   4 Input      1 Bit        Muxes := 16    
@@ -329,17 +332,20 @@ Detailed RTL Component Info :
 Module argand_plane 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
-	   3 Input     32 Bit       Adders := 3     
+	   3 Input     48 Bit       Adders := 1     
+	   2 Input     48 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
 +---Multipliers : 
 	                32x32  Multipliers := 1     
-	                20x32  Multipliers := 2     
+	                24x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
 	   3 Input     16 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
 Module number_selector 
@@ -368,24 +374,26 @@ Module Calculate
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     48 Bit       Adders := 3     
-	   2 Input     20 Bit       Adders := 2     
-	   2 Input     13 Bit       Adders := 2     
-	   3 Input     12 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     18 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 2     
 +---Registers : 
-	               20 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     48 Bit        Muxes := 3     
-	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     24 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 2     
 Module Display 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     20 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 2     
 +---Registers : 
 	               16 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
 	   3 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
 	  14 Input      7 Bit        Muxes := 14    
@@ -412,9 +420,9 @@ INFO: [Synth 8-5545] ROM "clk_2Hz_inst/my_clock0" won't be mapped to RAM because
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "dynamic_scale" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:94]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:88]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:88]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:94]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:88]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/argand_plane.v:88]
 DSP Report: Generating DSP ry_scaled, operation Mode is: A*B.
 DSP Report: operator ry_scaled is absorbed into DSP ry_scaled.
 DSP Report: operator ry_scaled is absorbed into DSP ry_scaled.
@@ -458,10 +466,10 @@ DSP Report: operator real_num1 is absorbed into DSP real_num1.
 DSP Report: operator real_num2 is absorbed into DSP real_num1.
 DSP Report: Generating DSP real_num3, operation Mode is: A*B.
 DSP Report: operator real_num3 is absorbed into DSP real_num3.
-DSP Report: Generating DSP real_num2, operation Mode is: C+A*B.
+DSP Report: Generating DSP real_num2, operation Mode is: PCIN+A*B.
 DSP Report: operator real_num2 is absorbed into DSP real_num2.
 DSP Report: operator real_num3 is absorbed into DSP real_num2.
-DSP Report: Generating DSP real_num5, operation Mode is: C+A*B.
+DSP Report: Generating DSP real_num5, operation Mode is: PCIN+A*B.
 DSP Report: operator real_num5 is absorbed into DSP real_num5.
 DSP Report: operator real_num2 is absorbed into DSP real_num5.
 DSP Report: Generating DSP img_num2, operation Mode is: A*B.
@@ -469,7 +477,7 @@ DSP Report: operator img_num2 is absorbed into DSP img_num2.
 DSP Report: Generating DSP img_num1, operation Mode is: C+A*B.
 DSP Report: operator img_num1 is absorbed into DSP img_num1.
 DSP Report: operator img_num2 is absorbed into DSP img_num1.
-DSP Report: Generating DSP img_num5, operation Mode is: C-A*B.
+DSP Report: Generating DSP img_num5, operation Mode is: PCIN-A*B.
 DSP Report: operator img_num5 is absorbed into DSP img_num5.
 DSP Report: operator img_num2 is absorbed into DSP img_num5.
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
@@ -488,22 +496,22 @@ INFO: [Synth 8-5587] ROM size for "char_to_seg9" is below threshold of ROM addre
 INFO: [Synth 8-5587] ROM size for "char_to_seg8" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "char_to_seg7" is below threshold of ROM address width. It will be mapped to LUTs
 INFO: [Synth 8-5587] ROM size for "char_to_seg6" is below threshold of ROM address width. It will be mapped to LUTs
-INFO: [Synth 8-4471] merging register 'm_input_display/n3_count_reg[3:0]' into 'm_input_display/n3_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
-INFO: [Synth 8-4471] merging register 'm_input_display/n4_count_reg[3:0]' into 'm_input_display/n4_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
-INFO: [Synth 8-4471] merging register 'm_input_display/n1_count_reg[3:0]' into 'm_input_display/n1_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
-INFO: [Synth 8-4471] merging register 'm_input_display/n2_count_reg[3:0]' into 'm_input_display/n2_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
-INFO: [Synth 8-4471] merging register 'm_input_display/n7_count_reg[3:0]' into 'm_input_display/n7_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
-INFO: [Synth 8-4471] merging register 'm_input_display/n8_count_reg[3:0]' into 'm_input_display/n8_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
-INFO: [Synth 8-4471] merging register 'm_input_display/n5_count_reg[3:0]' into 'm_input_display/n5_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
-INFO: [Synth 8-4471] merging register 'm_input_display/n6_count_reg[3:0]' into 'm_input_display/n6_count_reg[3:0]' [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n4_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n2_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n8_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n6_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n3_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n1_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n7_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
-WARNING: [Synth 8-6014] Unused sequential element m_input_display/n5_count_reg was removed.  [D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+INFO: [Synth 8-4471] merging register 'm_input_display/n3_count_reg[3:0]' into 'm_input_display/n3_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
+INFO: [Synth 8-4471] merging register 'm_input_display/n4_count_reg[3:0]' into 'm_input_display/n4_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
+INFO: [Synth 8-4471] merging register 'm_input_display/n1_count_reg[3:0]' into 'm_input_display/n1_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+INFO: [Synth 8-4471] merging register 'm_input_display/n2_count_reg[3:0]' into 'm_input_display/n2_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
+INFO: [Synth 8-4471] merging register 'm_input_display/n7_count_reg[3:0]' into 'm_input_display/n7_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
+INFO: [Synth 8-4471] merging register 'm_input_display/n8_count_reg[3:0]' into 'm_input_display/n8_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
+INFO: [Synth 8-4471] merging register 'm_input_display/n5_count_reg[3:0]' into 'm_input_display/n5_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+INFO: [Synth 8-4471] merging register 'm_input_display/n6_count_reg[3:0]' into 'm_input_display/n6_count_reg[3:0]' [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n4_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n2_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n8_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:107]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n6_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:105]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n3_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n1_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n7_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:106]
+WARNING: [Synth 8-6014] Unused sequential element m_input_display/n5_count_reg was removed.  [C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/input_display.v:104]
 INFO: [Synth 8-5545] ROM "clk_25MHz_inst/my_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_6p25MHz_inst/my_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_500Hz_inst/my_clock0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -544,7 +552,7 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (\m_input_
 WARNING: [Synth 8-3332] Sequential element (m_input_display/digit3/display_num_reg[7]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (m_input_display/digit1/display_num_reg[7]) is unused and will be removed from module Top_Student.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 787.883 ; gain = 530.555
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 771.203 ; gain = 514.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -562,18 +570,18 @@ DSP: Preliminary Mapping  Report (see note below)
 |argand_plane | (PCIN>>17)+A*B | 15     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |argand_plane | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |argand_plane | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|argand_plane | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|argand_plane | (PCIN>>17)+A*B | 20     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|argand_plane | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|argand_plane | (PCIN>>17)+A*B | 20     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Calculate    | A*B            | 20     | 12     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Calculate    | C-A*B          | 20     | 12     | 23     | -      | 23     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|Calculate    | A*B            | 20     | 12     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Calculate    | C+A*B          | 20     | 12     | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|Calculate    | C+A*B          | 20     | 12     | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|Calculate    | A*B            | 20     | 12     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Calculate    | C+A*B          | 20     | 12     | 24     | -      | 24     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|Calculate    | C-A*B          | 20     | 12     | 23     | -      | 23     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|argand_plane | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|argand_plane | (PCIN>>17)+A*B | 24     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|argand_plane | A*B            | 24     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|argand_plane | (PCIN>>17)+A*B | 24     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Calculate    | A*B            | 18     | 17     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Calculate    | C-A*B          | 18     | 17     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Calculate    | A*B            | 18     | 17     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Calculate    | PCIN+A*B       | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Calculate    | PCIN+A*B       | 18     | 17     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Calculate    | A*B            | 18     | 17     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Calculate    | C+A*B          | 18     | 17     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Calculate    | PCIN-A*B       | 18     | 17     | -      | -      | 40     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -590,13 +598,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 815.680 ; gain = 558.352
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 810.547 ; gain = 554.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 843.766 ; gain = 586.438
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 839.363 ; gain = 582.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -608,7 +616,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -632,7 +640,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -645,7 +653,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -657,25 +665,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -692,23 +700,23 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     3|
-|2     |CARRY4    |  1577|
-|3     |DSP48E1   |     7|
-|4     |DSP48E1_2 |     5|
-|5     |DSP48E1_3 |     3|
-|6     |DSP48E1_4 |     4|
-|7     |LUT1      |   285|
-|8     |LUT2      |   601|
-|9     |LUT3      |   622|
-|10    |LUT4      |  2834|
-|11    |LUT5      |  2490|
-|12    |LUT6      |   841|
+|2     |CARRY4    |  1621|
+|3     |DSP48E1   |     8|
+|4     |DSP48E1_2 |     4|
+|5     |DSP48E1_3 |     6|
+|6     |DSP48E1_4 |     2|
+|7     |LUT1      |   377|
+|8     |LUT2      |   515|
+|9     |LUT3      |   768|
+|10    |LUT4      |   558|
+|11    |LUT5      |  4796|
+|12    |LUT6      |   882|
 |13    |MUXF7     |     1|
 |14    |FDE_1     |    64|
-|15    |FDRE      |   458|
+|15    |FDRE      |   470|
 |16    |FDSE      |     1|
 |17    |IBUF      |    13|
-|18    |OBUF      |    28|
+|18    |OBUF      |    32|
 |19    |OBUFT     |     2|
 +------+----------+------+
 
@@ -716,30 +724,30 @@ Report Instance Areas:
 +------+-------------------+------------------+------+
 |      |Instance           |Module            |Cells |
 +------+-------------------+------------------+------+
-|1     |top                |                  |  9839|
+|1     |top                |                  | 10123|
 |2     |  clk_25MHz_inst   |clock             |    50|
 |3     |  clk_2Hz_inst     |clock_0           |    55|
 |4     |  clk_500Hz_inst   |clock_1           |    54|
 |5     |  clk_6p25MHz_inst |clock_2           |    52|
-|6     |  m_Calculate      |Calculate         |  7695|
-|7     |  m_Display        |Display           |   635|
-|8     |    display        |Oled_Display_6    |   454|
-|9     |  m_argand_plane   |argand_plane      |   931|
-|10    |    oled           |Oled_Display      |   421|
-|11    |  m_input_display  |input_display     |   303|
+|6     |  m_Calculate      |Calculate         |  7868|
+|7     |  m_Display        |Display           |   642|
+|8     |    display        |Oled_Display_6    |   459|
+|9     |  m_argand_plane   |argand_plane      |  1021|
+|10    |    oled           |Oled_Display      |   418|
+|11    |  m_input_display  |input_display     |   307|
 |12    |    digit1         |number_selector   |    17|
 |13    |    digit2         |number_selector_3 |    17|
 |14    |    digit3         |number_selector_4 |    17|
 |15    |    digit4         |number_selector_5 |    24|
 +------+-------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 973.055 ; gain = 715.727
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 964.723 ; gain = 708.180
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 973.055 ; gain = 372.660
-Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 973.055 ; gain = 715.727
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 964.723 ; gain = 360.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 964.723 ; gain = 708.180
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1674 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1719 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -748,11 +756,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 64 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-132 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+133 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:29 . Memory (MB): peak = 973.055 ; gain = 728.391
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 964.723 ; gain = 721.023
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 973.055 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 15:45:54 2026...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 964.723 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  8 01:02:40 2026...

@@ -23,8 +23,8 @@
 module argand_plane(
     input clk_25MHz,
     input clk_6p25MHz,
-    input [19:0] RE,
-    input [19:0] IM,
+    input [23:0] RE,
+    input [23:0] IM,
     input auto_zoom,
     output [7:0] JA
     );
@@ -51,8 +51,8 @@ module argand_plane(
     // 1. Sign Extension
     wire signed [31:0] s_x  = x;
     wire signed [31:0] s_y  = y;
-    wire signed [31:0] s_RE = {{12{RE[19]}}, RE}; 
-    wire signed [31:0] s_IM = {{12{IM[19]}}, IM};
+    wire signed [31:0] s_RE = {{8{RE[23]}}, RE}; 
+    wire signed [31:0] s_IM = {{8{IM[23]}}, IM};
 
     // 2. 180-Degree Screen Rotation
     wire signed [31:0] rx = 48 - s_x;
@@ -69,7 +69,7 @@ module argand_plane(
     // We want the maximum coordinate to sit around 32 pixels away from the origin.
     // SCALE = max_coord / 32. In hardware, dividing by 32 is a Right Shift by 5.
     wire signed [31:0] calc_scale = max_coord >> 5;
-    ++++
+  
     // Ensure scale never drops to 0 (which would collapse the math to a black hole)
     wire signed [31:0] dynamic_scale = (calc_scale == 0) ? 1 : calc_scale;
     
@@ -85,13 +85,13 @@ module argand_plane(
     wire signed [31:0] ry_scaled = ry * SCALE;
 
     // 4. Cross product
-    wire signed [31:0] cross = (rx_scaled * s_IM) - (ry_scaled * s_RE);
-    wire signed [31:0] abs_cross = (cross < 0) ? -cross : cross;
+    wire signed [47:0] cross = (rx_scaled * s_IM) - (ry_scaled * s_RE);
+    wire signed [47:0] abs_cross = (cross < 0) ? -cross : cross;
 
     // 5. Fully Adaptive Threshold
     // By tying the threshold directly to the active SCALE, the line thickness 
     // will remain perfectly consistent (~1-2 pixels) regardless of how far in or out we zoom.
-    wire signed [31:0] thresh = SCALE * max_coord; 
+    wire signed [47:0] thresh = SCALE * max_coord; 
 
     // 6. Bounding box to stop the line at the endpoint
     wire in_bound_x = (s_RE >= 0) ? (rx_scaled >= -SCALE && rx_scaled <= s_RE + SCALE) : 

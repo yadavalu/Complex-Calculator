@@ -2,299 +2,37 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Apr  5 21:43:04 2026
-# Process ID: 39636
-# Current directory: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent39628 C:\Users\Tarun\Desktop\FDP_123.xpr\FDP\FDP.xpr
-# Log file: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/vivado.log
-# Journal file: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP\vivado.jou
+# Start of session at: Tue Apr  7 23:04:57 2026
+# Process ID: 25484
+# Current directory: C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27048 C:\Users\Tarun\Documents\GitHub\Complex-Calculator\FDP_123.xpr\FDP\FDP.xpr
+# Log file: C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/vivado.log
+# Journal file: C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.xpr
+open_project C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.xpr
 update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 11
 wait_on_run impl_1
-open_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-show_objects -name dbg [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ CARRY.*.* } ]
-close_design
-open_run synth_1 -name synth_1
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
-set_property port_width 7 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {real_1[0]} {real_1[1]} {real_1[2]} {real_1[3]} {real_1[4]} {real_1[5]} {real_1[6]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {img_2[0]} {img_2[1]} {img_2[2]} {img_2[3]} {img_2[4]} {img_2[5]} {img_2[6]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 20 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {output2[0]} {output2[1]} {output2[2]} {output2[3]} {output2[4]} {output2[5]} {output2[6]} {output2[7]} {output2[8]} {output2[9]} {output2[10]} {output2[11]} {output2[12]} {output2[13]} {output2[14]} {output2[15]} {output2[16]} {output2[17]} {output2[18]} {output2[19]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list {img_1[0]} {img_1[1]} {img_1[2]} {img_1[3]} {img_1[4]} {img_1[5]} {img_1[6]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 20 [get_debug_ports u_ila_0/probe4]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list {output1[0]} {output1[1]} {output1[2]} {output1[3]} {output1[4]} {output1[5]} {output1[6]} {output1[7]} {output1[8]} {output1[9]} {output1[10]} {output1[11]} {output1[12]} {output1[13]} {output1[14]} {output1[15]} {output1[16]} {output1[17]} {output1[18]} {output1[19]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe5]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
-connect_debug_port u_ila_0/probe5 [get_nets [list {real_2[0]} {real_2[1]} {real_2[2]} {real_2[3]} {real_2[4]} {real_2[5]} {real_2[6]} ]]
-save_constraints -force
-reset_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-save_wave_config {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-launch_simulation
-source test_bench.tcl
-add_bp {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v} 73
-remove_bps -file {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v} -line 73
-add_bp {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v} 73
-remove_bps -file {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.srcs/sources_1/new/Calculate.v} -line 73
-close_sim
-launch_simulation
-source test_bench.tcl
-close_sim
-launch_simulation
-source test_bench.tcl
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {real_2} }
-save_wave_config {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*denom*" ]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { MARK_DEBUG == "TRUE" } ]
-show_objects -name temp [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ CARRY.*.* } ]
-refresh_design
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list clk_IBUF_BUFG ]]
-set_property port_width 48 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {m_Calculate/denom[0]} {m_Calculate/denom[1]} {m_Calculate/denom[2]} {m_Calculate/denom[3]} {m_Calculate/denom[4]} {m_Calculate/denom[5]} {m_Calculate/denom[6]} {m_Calculate/denom[7]} {m_Calculate/denom[8]} {m_Calculate/denom[9]} {m_Calculate/denom[10]} {m_Calculate/denom[11]} {m_Calculate/denom[12]} {m_Calculate/denom[13]} {m_Calculate/denom[14]} {m_Calculate/denom[15]} {m_Calculate/denom[16]} {m_Calculate/denom[17]} {m_Calculate/denom[18]} {m_Calculate/denom[19]} {m_Calculate/denom[20]} {m_Calculate/denom[21]} {m_Calculate/denom[22]} {m_Calculate/denom[23]} {m_Calculate/denom[24]} {m_Calculate/denom[25]} {m_Calculate/denom[26]} {m_Calculate/denom[27]} {m_Calculate/denom[28]} {m_Calculate/denom[29]} {m_Calculate/denom[30]} {m_Calculate/denom[31]} {m_Calculate/denom[32]} {m_Calculate/denom[33]} {m_Calculate/denom[34]} {m_Calculate/denom[35]} {m_Calculate/denom[36]} {m_Calculate/denom[37]} {m_Calculate/denom[38]} {m_Calculate/denom[39]} {m_Calculate/denom[40]} {m_Calculate/denom[41]} {m_Calculate/denom[42]} {m_Calculate/denom[43]} {m_Calculate/denom[44]} {m_Calculate/denom[45]} {m_Calculate/denom[46]} {m_Calculate/denom[47]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 48 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {m_Calculate/temp_real[0]} {m_Calculate/temp_real[1]} {m_Calculate/temp_real[2]} {m_Calculate/temp_real[3]} {m_Calculate/temp_real[4]} {m_Calculate/temp_real[5]} {m_Calculate/temp_real[6]} {m_Calculate/temp_real[7]} {m_Calculate/temp_real[8]} {m_Calculate/temp_real[9]} {m_Calculate/temp_real[10]} {m_Calculate/temp_real[11]} {m_Calculate/temp_real[12]} {m_Calculate/temp_real[13]} {m_Calculate/temp_real[14]} {m_Calculate/temp_real[15]} {m_Calculate/temp_real[16]} {m_Calculate/temp_real[17]} {m_Calculate/temp_real[18]} {m_Calculate/temp_real[19]} {m_Calculate/temp_real[20]} {m_Calculate/temp_real[21]} {m_Calculate/temp_real[22]} {m_Calculate/temp_real[23]} {m_Calculate/temp_real[24]} {m_Calculate/temp_real[25]} {m_Calculate/temp_real[26]} {m_Calculate/temp_real[27]} {m_Calculate/temp_real[28]} {m_Calculate/temp_real[29]} {m_Calculate/temp_real[30]} {m_Calculate/temp_real[31]} {m_Calculate/temp_real[32]} {m_Calculate/temp_real[33]} {m_Calculate/temp_real[34]} {m_Calculate/temp_real[35]} {m_Calculate/temp_real[36]} {m_Calculate/temp_real[37]} {m_Calculate/temp_real[38]} {m_Calculate/temp_real[39]} {m_Calculate/temp_real[40]} {m_Calculate/temp_real[41]} {m_Calculate/temp_real[42]} {m_Calculate/temp_real[43]} {m_Calculate/temp_real[44]} {m_Calculate/temp_real[45]} {m_Calculate/temp_real[46]} {m_Calculate/temp_real[47]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 48 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list {m_Calculate/temp_imag[0]} {m_Calculate/temp_imag[1]} {m_Calculate/temp_imag[2]} {m_Calculate/temp_imag[3]} {m_Calculate/temp_imag[4]} {m_Calculate/temp_imag[5]} {m_Calculate/temp_imag[6]} {m_Calculate/temp_imag[7]} {m_Calculate/temp_imag[8]} {m_Calculate/temp_imag[9]} {m_Calculate/temp_imag[10]} {m_Calculate/temp_imag[11]} {m_Calculate/temp_imag[12]} {m_Calculate/temp_imag[13]} {m_Calculate/temp_imag[14]} {m_Calculate/temp_imag[15]} {m_Calculate/temp_imag[16]} {m_Calculate/temp_imag[17]} {m_Calculate/temp_imag[18]} {m_Calculate/temp_imag[19]} {m_Calculate/temp_imag[20]} {m_Calculate/temp_imag[21]} {m_Calculate/temp_imag[22]} {m_Calculate/temp_imag[23]} {m_Calculate/temp_imag[24]} {m_Calculate/temp_imag[25]} {m_Calculate/temp_imag[26]} {m_Calculate/temp_imag[27]} {m_Calculate/temp_imag[28]} {m_Calculate/temp_imag[29]} {m_Calculate/temp_imag[30]} {m_Calculate/temp_imag[31]} {m_Calculate/temp_imag[32]} {m_Calculate/temp_imag[33]} {m_Calculate/temp_imag[34]} {m_Calculate/temp_imag[35]} {m_Calculate/temp_imag[36]} {m_Calculate/temp_imag[37]} {m_Calculate/temp_imag[38]} {m_Calculate/temp_imag[39]} {m_Calculate/temp_imag[40]} {m_Calculate/temp_imag[41]} {m_Calculate/temp_imag[42]} {m_Calculate/temp_imag[43]} {m_Calculate/temp_imag[44]} {m_Calculate/temp_imag[45]} {m_Calculate/temp_imag[46]} {m_Calculate/temp_imag[47]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list {img_2[0]} {img_2[1]} {img_2[2]} {img_2[3]} {img_2[4]} {img_2[5]} {img_2[6]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe4]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
-connect_debug_port u_ila_0/probe4 [get_nets [list {img_1[0]} {img_1[1]} {img_1[2]} {img_1[3]} {img_1[4]} {img_1[5]} {img_1[6]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 20 [get_debug_ports u_ila_0/probe5]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
-connect_debug_port u_ila_0/probe5 [get_nets [list {output1[0]} {output1[1]} {output1[2]} {output1[3]} {output1[4]} {output1[5]} {output1[6]} {output1[7]} {output1[8]} {output1[9]} {output1[10]} {output1[11]} {output1[12]} {output1[13]} {output1[14]} {output1[15]} {output1[16]} {output1[17]} {output1[18]} {output1[19]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 20 [get_debug_ports u_ila_0/probe6]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list {output2[0]} {output2[1]} {output2[2]} {output2[3]} {output2[4]} {output2[5]} {output2[6]} {output2[7]} {output2[8]} {output2[9]} {output2[10]} {output2[11]} {output2[12]} {output2[13]} {output2[14]} {output2[15]} {output2[16]} {output2[17]} {output2[18]} {output2[19]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe7]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
-connect_debug_port u_ila_0/probe7 [get_nets [list {real_2[0]} {real_2[1]} {real_2[2]} {real_2[3]} {real_2[4]} {real_2[5]} {real_2[6]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 7 [get_debug_ports u_ila_0/probe8]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
-connect_debug_port u_ila_0/probe8 [get_nets [list {real_1[0]} {real_1[1]} {real_1[2]} {real_1[3]} {real_1[4]} {real_1[5]} {real_1[6]} ]]
-save_constraints
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.ltx} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-add_wave -into {hw_ila_data_1.wcfg} -radix hex { {m_Calculate/denom} }
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { MARK_DEBUG == "TRUE" } ]
-reset_run synth_1
-launch_runs synth_1 -jobs 11
-wait_on_run synth_1
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { MARK_DEBUG == "TRUE" } ]
-refresh_design
-refresh_design
-refresh_design
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-save_wave_config {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 11
 wait_on_run impl_1
 open_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-reset_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 11
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
@@ -302,7 +40,74 @@ launch_runs impl_1 -to_step write_bitstream -jobs 11
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

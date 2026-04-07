@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1'
+HD_PWD='C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -23,76 +23,82 @@
 module Calculate(
     input clk, 
     input [3:0] sw,
-    input [6:0] real_1, img_1, real_2, img_2,   // 7-bit unsigned inputs
+    
+    input [6:0] real_1, img_1, real_2, img_2,  
 
-    output reg signed [19:0] real_num,          // Increased to 16-bit to prevent overflow
-    output reg signed [19:0] img_num,
+    output reg signed [23:0] real_num,          
+    output reg signed [23:0] img_num,
+    output reg [3:0] ld,
     output reg error = 0
 );
 
-    // Internal signed registers - widened for safety
-    reg signed [19:0] ar, ai, br, bi;
+    
+    reg signed [22:0] ar, ai, br, bi;
 
-    // Temporary registers widened to 48-bit to prevent shift/multiply truncation
+  
     reg signed [47:0] temp_real, temp_imag, denom;
 
-    // -----------------------------
-    // COMBINATIONAL: Pre-scale inputs to Q12.4
-    // -----------------------------
     always @(*) begin
-        ar = real_1 <<< 4;   
-        ai = img_1 <<< 4;
-        br = real_2 <<< 4;
-        bi = img_2 <<< 4;
+    ar = $signed({1'b0, real_1}) <<< 8;
+    ai = $signed({1'b0, img_1}) <<< 8;
+    br = $signed({1'b0, real_2}) <<< 8;
+    bi = $signed({1'b0, img_2}) <<< 8;
     end
 
-    // -----------------------------
-    // SEQUENTIAL: Main Operations
-    // -----------------------------
     always @(posedge clk) begin
         case(sw)
 
-            // ADD (Scale stays Q12.4)
+            // ADD 
             4'b0001: begin
                 real_num <= ar + br;
                 img_num  <= ai + bi;
+                ld <= 4'b0001;
             end
 
-            // SUB (Scale stays Q12.4)
+            // SUB 
             4'b0010: begin
                 real_num <= ar - br;
                 img_num  <= ai - bi;
+                ld <= 4'b0010;
             end
 
             // MULTIPLY
             4'b0100: begin
-                // Result of (Q.4 * Q.4) is Q.8
-                temp_real = (ar * br) - (ai * bi);
-                temp_imag = (ar * bi) + (ai * br);
-
-                // Shift back by 4 to return to Q12.4
-                real_num <= temp_real >>> 4;
-                img_num  <= temp_imag >>> 4;
+                ld <= 4'b0100;
+                temp_real = ($signed({{25{ar[22]}}, ar}) * $signed({{25{br[22]}}, br})) - 
+                            ($signed({{25{ai[22]}}, ai}) * $signed({{25{bi[22]}}, bi}));
+                            
+                temp_imag = ($signed({{25{ar[22]}}, ar}) * $signed({{25{bi[22]}}, bi})) + 
+                            ($signed({{25{ai[22]}}, ai}) * $signed({{25{br[22]}}, br})); 
+            
+             
+                real_num <= temp_real >>> 8;
+                img_num  <= temp_imag >>> 8;
             end
-
+            
             // DIVIDE
             4'b1000: begin
-                denom = (br * br) + (bi * bi);          // |b|^2  ? roughly Q24.8
+                ld <= 4'b1000;
+                
+                denom = ($signed({{25{br[22]}}, br}) * $signed(br)) + 
+                        ($signed({{25{bi[22]}}, bi}) * $signed(bi));         
             
                 if (denom != 0) begin
                     error <= 0;
-                    temp_real = (ar * br) + (ai * bi);  // real numerator ? Q24.8
-                    temp_imag = (ai * br) - (ar * bi);  // imag numerator ? Q24.8
-            
-                    // === CRITICAL FIXES ===
-                    // 1. Use wider intermediate to avoid overflow after << 4
-                    // 2. Use arithmetic shift (<<<) for signed numbers
-                    // 3. Perform the shift BEFORE division
-                    real_num <= (temp_real <<< 4) / denom;   // (Q24.8 * 16) / Q24.8  ? Q12.4
-                    img_num  <= (temp_imag <<< 4) / denom;
-            
+                    
+                    // 2. Calculate Numerators and shift left by 8 BEFORE dividing
+                    // This keeps the fractional data so you don't just get 0
+                    temp_real = (($signed({{25{ar[22]}}, ar}) * $signed(br)) + 
+                                 ($signed({{25{ai[22]}}, ai}) * $signed(bi))) <<< 8;
+                                 
+                    temp_imag = (($signed({{25{ai[22]}}, ai}) * $signed(br)) - 
+                                 ($signed({{25{ar[22]}}, ar}) * $signed(bi))) <<< 8;  
+                    
+                    // 3. Final division
+                    real_num <= temp_real / denom;   
+                    img_num  <= temp_imag / denom;
                 end else begin
-                    real_num <= 0;   // or 0, or a special "error" value like max negative
+                    real_num <= 0;   
                     img_num  <= 0;
                     error <= 1;
                 end
@@ -101,6 +107,7 @@ module Calculate(
                 real_num <= 0;
                 img_num  <= 0;
                 error <= 0;
+                ld <= 4'b0000;
             end
         endcase
     end

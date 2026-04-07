@@ -2,32 +2,34 @@
 
 module Display(
     input clk,
-    input signed [19:0] real_num,
-    input signed [19:0] img_num,
+    input signed [23:0] real_num, 
+    input signed [23:0] img_num,  
     input error,
     output [7:0] JB
-);
+    );
+    
+   // abs value
+    wire [23:0] real_abs_full = (real_num[23]) ? -real_num : real_num;
+    wire [23:0] img_abs_full  = (img_num[23])  ? -img_num  : img_num;
+    
+    // integer and fraction extraction
+    wire [15:0] real_abs = real_abs_full[23:8];
+    wire [15:0] img_abs  = img_abs_full[23:8];
+    
+    wire [7:0] real_frac_bits = real_abs_full[7:0];
+    wire [7:0] img_frac_bits  = img_abs_full[7:0];
+    
+    wire [15:0] real_frac_mult = real_frac_bits * 7'd100;
+    wire [15:0] img_frac_mult  = img_frac_bits  * 7'd100;
+    
+    wire [7:0] real_frac_dec = real_frac_mult >> 8;
+    wire [7:0] img_frac_dec  = img_frac_mult >> 8;
+    
+    // sign
+    wire real_neg = real_num[23];
+    wire img_neg  = img_num[23];
 
-    // ================= 1. ABSOLUTE MAGNITUDE FIRST =================
-    wire [19:0] real_abs_full = (real_num[19]) ? -real_num : real_num;
-    wire [19:0] img_abs_full  = (img_num[19])  ? -img_num  : img_num;
-
-    // ================= 2. INTEGER & FRACTION SPLIT =================
-    wire [15:0] real_abs = real_abs_full[19:4];
-    wire [15:0] img_abs  = img_abs_full[19:4];
-    wire [3:0] real_frac_bits = real_abs_full[3:0];
-    wire [3:0] img_frac_bits  = img_abs_full[3:0];
-
-    wire [10:0] real_frac_mult = real_frac_bits * 7'd100;
-    wire [10:0] img_frac_mult  = img_frac_bits  * 7'd100;
-    wire [6:0] real_frac_dec = real_frac_mult[10:4];
-    wire [6:0] img_frac_dec  = img_frac_mult[10:4];
-
-    // ================= 3. SIGN DETECTION =================
-    wire real_neg = real_num[19];
-    wire img_neg  = img_num[19];
-
-    // ================= 4. DIGIT EXTRACTION =================
+    // digit extraction
     wire [3:0] r_tten = (real_abs / 10000)% 10; 
     wire [3:0] r_thou = (real_abs / 1000) % 10;
     wire [3:0] r_hund = (real_abs / 100)  % 10;
@@ -45,7 +47,7 @@ module Display(
     wire [3:0] i_frac_tens = (img_frac_dec / 10) % 10;
     wire [3:0] i_frac_ones = img_frac_dec % 10;
 
-    // ================= 5. OLED INTERFACE =================
+    // OLED
     wire [12:0] pixel_index;
     wire send_pix;
     wire samp_pix = 1'b1;
@@ -68,7 +70,7 @@ module Display(
         .pmoden(JB[7])
     );
 
-    // ================= 6. DRAWING FUNCTIONS =================
+    
     localparam CHAR_H = 20;
     localparam CHAR_W = 9;
     localparam LINE_T = 2;
@@ -90,10 +92,10 @@ module Display(
     function [6:0] char_to_seg;
         input [7:0] char; // ASCII or custom code
         case(char)
-            "E": char_to_seg = 7'b1111001; // Top, Mid, Bot, TL, BL
-            "R": char_to_seg = 7'b0011000; // Just Mid, TL, BL (small 'r')
-            "O": char_to_seg = 7'b1110111; // Top, Bot, TL, BL, TR, BR
-            // Standard digits
+            "E": char_to_seg = 7'b1111001; 
+            "R": char_to_seg = 7'b0011000;
+            "O": char_to_seg = 7'b1110111; 
+            
             0: char_to_seg = 7'b1110111; 1: char_to_seg = 7'b0000110;
             2: char_to_seg = 7'b1011101; 3: char_to_seg = 7'b1001111;
             4: char_to_seg = 7'b0101110; 5: char_to_seg = 7'b1101011;
@@ -133,11 +135,11 @@ module Display(
                  ((px>=X+1)&&(px<X+4)&&(py>=Y+4)&&(py<Y+CHAR_H));
     endfunction
 
-    // ================= 7. PIXEL GENERATION =================
+    // pixels
     reg draw_real_row, draw_imag_row, draw_error_msg;
 
     always @(*) begin
-        // Normal Drawing
+        
         draw_real_row =
             (real_neg ? draw_minus(x,y,X_SIGN,Y_REAL) : draw_plus(x,y,X_SIGN,Y_REAL)) |
             draw_digit(x,y,X_D4,Y_REAL,char_to_seg(r_tten)) |                
@@ -161,10 +163,6 @@ module Display(
             draw_digit(x,y,X_F0,Y_IMAG,char_to_seg(i_frac_ones)) |
             draw_i(x,y,X_I,Y_IMAG);
 
-        // Error Drawing: Spelling "ERROR" using segment combinations
-        // E = Top, Mid, Bottom, Top-Left, Bottom-Left
-        // R = Top, Mid, Top-Left, Bottom-Left, Top-Right (rounded look)
-        // O = Top, Bottom, Left-side, Right-side
         draw_error_msg = 
             draw_digit(x,y, 20, 25, char_to_seg("E")) | 
             draw_digit(x,y, 30, 25, char_to_seg("R")) | 
@@ -175,12 +173,12 @@ module Display(
 
     always @(posedge clk) begin
         if (error) begin
-            if (draw_error_msg) oled_colour <= 16'b11111_000000_00000; // Bright Red
+            if (draw_error_msg) oled_colour <= 16'b11111_000000_00000; 
             else                oled_colour <= 16'b00000_000000_00000;
         end else begin
-            if      (draw_real_row) oled_colour <= 16'b11111_111111_00000; // yellow
-            else if (draw_imag_row) oled_colour <= 16'b00000_111111_11111; // cyan
-            else                    oled_colour <= 16'b00000_000000_00000; // black
+            if      (draw_real_row) oled_colour <= 16'b11111_111111_00000; 
+            else if (draw_imag_row) oled_colour <= 16'b00000_111111_11111; 
+            else                    oled_colour <= 16'b00000_000000_00000; 
         end
     end
 

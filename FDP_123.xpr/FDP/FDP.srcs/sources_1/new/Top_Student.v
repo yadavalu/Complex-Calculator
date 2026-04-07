@@ -19,6 +19,7 @@ module Top_Student (
     output [7:0] JA,
     output [7:0] JB,
     output [1:0] led,
+    output [3:0] ld,
     output [7:0] seg,
     output [3:0] an
     );
@@ -48,7 +49,7 @@ module Top_Student (
         );
     
      wire [6:0] real_1, img_1, real_2, img_2;
-     wire [19:0] output1,output2;
+     wire [23:0] output1,output2;
      wire error;
     
     argand_plane m_argand_plane(
@@ -83,11 +84,12 @@ module Top_Student (
     Calculate m_Calculate(
         .clk(clk), 
         .sw(sw),
+        .ld(ld),
         .real_1(real_1),
         .img_1(img_1),
         .real_2(real_2),
-        .img_2(img_2),  // 7-bit unsigned inputs
-        .real_num(output1),          // Increased to 16-bit to prevent overflow
+        .img_2(img_2),  
+        .real_num(output1),          
         .img_num(output2),
         .error(error)
     );
