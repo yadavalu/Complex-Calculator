@@ -14,7 +14,7 @@
 module Top_Student (
     input clk,
     input [1:0] sw_i,
-    input [3:0] sw,
+    input [4:0] sw,
     input btnC,btnU,btnL,btnR,btnD,
     output [7:0] JA,
     output [7:0] JB,
@@ -56,7 +56,8 @@ module Top_Student (
         .clk_6p25MHz(clk_6p25MHz),
         .JA(JA),
         .RE(output1),
-        .IM(output2)
+        .IM(output2),
+        .auto_zoom(sw[4])
     );
     
     

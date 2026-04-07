@@ -25,6 +25,7 @@ module argand_plane(
     input clk_6p25MHz,
     input [19:0] RE,
     input [19:0] IM,
+    input auto_zoom,
     output [7:0] JA
     );
     
@@ -47,32 +48,50 @@ module argand_plane(
     // Coordinate Math & Scaling (Combinational)
     // -------------------------------------------------------------------------
     
-    // 1. BULLETPROOF SIGN EXTENSION
+    // 1. Sign Extension
     wire signed [31:0] s_x  = x;
     wire signed [31:0] s_y  = y;
     wire signed [31:0] s_RE = {{12{RE[19]}}, RE}; 
     wire signed [31:0] s_IM = {{12{IM[19]}}, IM};
 
-    // 2. 180-Degree Screen Rotation around origin (48, 32)
-    // Hardware (0,0) is now visually Bottom-Right.
-    // Hardware (0,63) is now visually Top-Right.
+    // 2. 180-Degree Screen Rotation
     wire signed [31:0] rx = 48 - s_x;
-    wire signed [31:0] ry = s_y - 32; // FIXED: Y-axis inversion corrected
+    wire signed [31:0] ry = s_y - 32; 
     
-    // 3. SCALE UP screen coordinates.
-    localparam signed [31:0] SCALE = 625;
-    wire signed [31:0] rx_scaled = rx * SCALE;
-    wire signed [31:0] ry_scaled = ry * SCALE;
-
-    // 4. Cross product using the scaled coordinates
-    wire signed [31:0] cross = (rx_scaled * s_IM) - (ry_scaled * s_RE);
-    wire signed [31:0] abs_cross = (cross < 0) ? -cross : cross;
-
-    // 5. Dynamic threshold for uniform line thickness
+    // 3. Absolute values to find the maximum coordinate bounds
     wire signed [31:0] abs_RE = (s_RE < 0) ? -s_RE : s_RE;
     wire signed [31:0] abs_IM = (s_IM < 0) ? -s_IM : s_IM;
     wire signed [31:0] max_coord = (abs_RE > abs_IM) ? abs_RE : abs_IM;
-    wire signed [31:0] thresh = 400 * max_coord; 
+
+    // -------------------------------------------------------------------------
+    // AUTO-ZOOM LOGIC
+    // -------------------------------------------------------------------------
+    // We want the maximum coordinate to sit around 32 pixels away from the origin.
+    // SCALE = max_coord / 32. In hardware, dividing by 32 is a Right Shift by 5.
+    wire signed [31:0] calc_scale = max_coord >> 5;
+    ++++
+    // Ensure scale never drops to 0 (which would collapse the math to a black hole)
+    wire signed [31:0] dynamic_scale = (calc_scale == 0) ? 1 : calc_scale;
+    
+    localparam signed [31:0] FIXED_SCALE = 625;
+    
+    // Multiplexer to choose between fixed scale and dynamic scale based on input switch
+    wire signed [31:0] SCALE = auto_zoom ? dynamic_scale : FIXED_SCALE;
+
+    // -------------------------------------------------------------------------
+    
+    // Apply the chosen scale to the pixel coordinates
+    wire signed [31:0] rx_scaled = rx * SCALE;
+    wire signed [31:0] ry_scaled = ry * SCALE;
+
+    // 4. Cross product
+    wire signed [31:0] cross = (rx_scaled * s_IM) - (ry_scaled * s_RE);
+    wire signed [31:0] abs_cross = (cross < 0) ? -cross : cross;
+
+    // 5. Fully Adaptive Threshold
+    // By tying the threshold directly to the active SCALE, the line thickness 
+    // will remain perfectly consistent (~1-2 pixels) regardless of how far in or out we zoom.
+    wire signed [31:0] thresh = SCALE * max_coord; 
 
     // 6. Bounding box to stop the line at the endpoint
     wire in_bound_x = (s_RE >= 0) ? (rx_scaled >= -SCALE && rx_scaled <= s_RE + SCALE) : 
@@ -84,8 +103,8 @@ module argand_plane(
     wire is_line = in_bound_x && in_bound_y && (abs_cross <= thresh);
     
     // 8. Find the exact mathematical endpoint to draw a clean dot marker
-    wire is_re_end = (rx_scaled >= s_RE - (SCALE/2)) && (rx_scaled <= s_RE + (SCALE/2));
-    wire is_im_end = (ry_scaled >= s_IM - (SCALE/2)) && (ry_scaled <= s_IM + (SCALE/2));
+    wire is_re_end = (rx_scaled >= s_RE - SCALE) && (rx_scaled <= s_RE + SCALE);
+    wire is_im_end = (ry_scaled >= s_IM - SCALE) && (ry_scaled <= s_IM + SCALE);
     wire is_endpoint = is_re_end && is_im_end;
 
     // -------------------------------------------------------------------------
@@ -96,7 +115,7 @@ module argand_plane(
         oled_colour <= 16'b11111_111111_11111; // Default White
         
         // Draw Origin Axes
-        if (x == 48 || y == 32) begin 
+        if (rx == 0 || ry == 0) begin 
             oled_colour <= 16'b00000_000000_00000; // Black
         end
             
