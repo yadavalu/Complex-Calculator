@@ -16,7 +16,7 @@ module Top_Student (
     input [1:0] sw_i,
     input [3:0] sw,
     input btnC,btnU,btnL,btnR,btnD,
-    output [7:0] JC,
+    output [7:0] JA,
     output [7:0] JB,
     output [1:0] led,
     output [7:0] seg,
@@ -54,7 +54,7 @@ module Top_Student (
     argand_plane m_argand_plane(
         .clk_25MHz(clk_25MHz),
         .clk_6p25MHz(clk_6p25MHz),
-        .JC(JC),
+        .JA(JA),
         .RE(output1),
         .IM(output2)
     );

@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Apr  6 01:08:39 2026
-# Process ID: 24612
-# Current directory: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/synth_1
+# Start of session at: Tue Apr  7 15:23:46 2026
+# Process ID: 4516
+# Current directory: D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.runs/synth_1
 # Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
-# Log file: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/synth_1/Top_Student.vds
-# Journal file: C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/synth_1\vivado.jou
+# Log file: D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.runs/synth_1/Top_Student.vds
+# Journal file: D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Student.tcl -notrace

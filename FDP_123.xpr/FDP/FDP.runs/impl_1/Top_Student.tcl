@@ -60,22 +60,22 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.collectionResultDisplayLimit 0
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.xpr [current_project]
-  set_property ip_output_repo C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.cache/ip [current_project]
+  set_property webtalk.parent_dir {D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.cache/wt} [current_project]
+  set_property parent.project_path {D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.xpr} [current_project]
+  set_property ip_output_repo {{D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.runs/synth_1/Top_Student.dcp
-  read_xdc C:/Users/Tarun/Desktop/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc
+  add_files -quiet {{D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.runs/synth_1/Top_Student.dcp}}
+  read_xdc {{D:/NUS/EE2026/Complex Calculator/FDP_123.xpr/FDP/FDP.srcs/constrs_1/new/constraints.xdc}}
   link_design -top Top_Student -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

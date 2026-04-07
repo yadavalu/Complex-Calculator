@@ -40,10 +40,10 @@ module Calculate(
     // COMBINATIONAL: Pre-scale inputs to Q12.4
     // -----------------------------
     always @(*) begin
-    ar = real_1 <<< 4;   
-    ai = img_1 <<< 4;
-    br = real_2 <<< 4;
-    bi = img_2 <<< 4;
+        ar = real_1 <<< 4;   
+        ai = img_1 <<< 4;
+        br = real_2 <<< 4;
+        bi = img_2 <<< 4;
     end
 
     // -----------------------------
