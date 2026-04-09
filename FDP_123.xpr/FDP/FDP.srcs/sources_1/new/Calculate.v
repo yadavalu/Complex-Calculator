@@ -86,15 +86,14 @@ module Calculate(
                 if (denom != 0) begin
                     error <= 0;
                     
-                    // 2. Calculate Numerators and shift left by 8 BEFORE dividing
-                    // This keeps the fractional data so you don't just get 0
+                   
                     temp_real = (($signed({{25{ar[22]}}, ar}) * $signed(br)) + 
                                  ($signed({{25{ai[22]}}, ai}) * $signed(bi))) <<< 8;
                                  
                     temp_imag = (($signed({{25{ai[22]}}, ai}) * $signed(br)) - 
                                  ($signed({{25{ar[22]}}, ar}) * $signed(bi))) <<< 8;  
                     
-                    // 3. Final division
+                 
                     real_num <= temp_real / denom;   
                     img_num  <= temp_imag / denom;
                 end else begin
