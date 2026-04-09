@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="D:/NUS/EE2026/Complex-Calculator/FDP_123.xpr/FDP/FDP.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/Tarun/Documents/GitHub/Complex-Calculator/FDP_123.xpr/FDP/FDP.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1b59260b1b364ad787c30c8f0666f63f"/>

@@ -85,7 +85,7 @@ module input_display(
     output reg [6:0] real_1, img_1, real_2, img_2
 
     );
-//    reg [6:0]  real_2, img_2;// to be put as outputs when integrating
+
 
     reg btnU_delay, btnD_delay,btnL_delay,btnR_delay,btnC_delay;
 
