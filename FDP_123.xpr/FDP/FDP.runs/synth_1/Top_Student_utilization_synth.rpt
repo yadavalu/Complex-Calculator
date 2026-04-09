@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Apr  8 01:02:40 2026
-| Host         : Tarun running 64-bit major release  (build 9200)
+| Date         : Fri Apr 10 00:24:30 2026
+| Host         : DesktopAa running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
 | Design       : Top_Student
 | Device       : 7a35tcpg236-1
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   47 |     0 |       106 | 44.34 |
+| Bonded IOB                  |   48 |     0 |       106 | 45.28 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -158,7 +158,7 @@ Table of Contents
 | FDRE     |  534 |        Flop & Latch |
 | LUT2     |  515 |                 LUT |
 | LUT1     |  377 |                 LUT |
-| OBUF     |   32 |                  IO |
+| OBUF     |   33 |                  IO |
 | DSP48E1  |   20 |    Block Arithmetic |
 | IBUF     |   13 |                  IO |
 | BUFG     |    3 |               Clock |
