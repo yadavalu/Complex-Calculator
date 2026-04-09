@@ -3,10 +3,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 //
 //  FILL IN THE FOLLOWING INFORMATION:
-//  STUDENT A NAME: 
-//  STUDENT B NAME:
-//  STUDENT C NAME: 
-//  STUDENT D NAME:  
+//  STUDENT A NAME: Aadith Yadav Govindarajan
+//  STUDENT B NAME: Tarun Devu
+//  STUDENT C NAME: Selvam Vishnugandan
+//  STUDENT D NAME: Rajaraman Keshav
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -19,7 +19,7 @@ module Top_Student (
     output [7:0] JA,
     output [7:0] JB,
     output [1:0] led,
-    output [3:0] ld,
+    output [4:0] ld,
     output [7:0] seg,
     output [3:0] an
     );
@@ -48,9 +48,10 @@ module Top_Student (
             .my_clock(clk_2Hz)
         );
     
-     wire [6:0] real_1, img_1, real_2, img_2;
-     wire [23:0] output1,output2;
-     wire error;
+    wire [6:0] real_1, img_1, real_2, img_2;
+    wire [23:0] output1,output2;
+    wire error;
+    assign ld[4] = sw[4];
     
     argand_plane m_argand_plane(
         .clk_25MHz(clk_25MHz),
@@ -60,8 +61,7 @@ module Top_Student (
         .IM(output2),
         .auto_zoom(sw[4])
     );
-    
-    
+     
     input_display m_input_display(
         .basys_clock(clk),
         .clk_500Hz(clk_500Hz),
@@ -84,7 +84,7 @@ module Top_Student (
     Calculate m_Calculate(
         .clk(clk), 
         .sw(sw),
-        .ld(ld),
+        .ld(ld[3:0]),
         .real_1(real_1),
         .img_1(img_1),
         .real_2(real_2),
